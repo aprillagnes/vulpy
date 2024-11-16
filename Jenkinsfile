@@ -28,7 +28,8 @@ node {
       sh """
       ${scannerHome}/bin/sonar-scanner \
       -Dsonar.projectBaseDir=${params.APP_VERSION} \
-      -Dsonar.sources=.
+      -Dsonar.sources=. \
+      -Dsonar.projectKey=tan-digital
       """
     }
   }
